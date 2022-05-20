@@ -4,10 +4,9 @@ import io.appium.java_client.MobileBy;
 import net.thucydides.core.annotations.Step;
 import org.openqa.selenium.By;
 
-import org.openqa.selenium.NoSuchElementException;
 import test.automation.pageobject.BasePageObject;
 
-public class AltaShopPage extends BasePageObject {
+public class LoginPage extends BasePageObject {
     private By LoginPage_Btn() { return MobileBy.xpath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.Button[1]");}
 
     private By Email_Field() { return MobileBy.xpath("//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.EditText[1]");}

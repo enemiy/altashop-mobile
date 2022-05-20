@@ -5,42 +5,36 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
-import org.junit.Assert;
-import test.automation.pages.AltaShopPage;
+import test.automation.pages.LoginPage;
 
-public class AuthenticationSteps {
+public class Login {
     @Steps
-    AltaShopPage altaShopPage;
+    LoginPage loginPage;
 
     @Given("user on login page")
     public void onLoginPage() {
-        altaShopPage.onTapLoginPageButton();
+        loginPage.onTapLoginPageButton();
     }
 
 
     @When("user input email {string}")
     public void userInputEmail(String email) {
-        altaShopPage.onEmailField(email);
+        loginPage.onEmailField(email);
     }
 
     @And("user input password {string}")
     public void userInputPassword(String password) {
-        altaShopPage.onPasswordField(password);
+        loginPage.onPasswordField(password);
     }
 
     @Then("Tap login Button")
     public void tapLoginButton() {
-        altaShopPage.onTapLoginButton();
+        loginPage.onTapLoginButton();
     }
 
     @Then("Verify user success login status")
     public void verifyUserSuccessLoginStatus() {
-        altaShopPage.verifyLogoutButton();
+        loginPage.verifyLogoutButton();
     }
-
-//    @Then("User see result Subtraction is {string}")
-//    public void userSeeResultSubtractionIs(String numb) {
-//        Assert.assertEquals(numb, altaShopPage.getResultSubtraction());
-//    }
 
 }

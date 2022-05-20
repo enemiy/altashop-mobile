@@ -9,5 +9,6 @@ Feature: As an User, I want to perform authentication
 
     Examples:
       | email | pw |
-      |asa    |asa |
-      |z      |z   |
+      | ihsan     |    |
+      |ihsann@email.com    |ihsan |
+      |ihsan@email.com      |ihsan   |
